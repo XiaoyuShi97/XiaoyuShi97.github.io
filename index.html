@@ -39,7 +39,7 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
             <ul>
-              <li>Our VideoFlow, FlowFormer++, and FlowFormer occupy the TOP 3 places in the Sintel Optical Flow benchmark among published papers.</li>
+              <li>Our <a href="https://arxiv.org/abs/2303.08340">VideoFlow</a>, <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Shi_FlowFormer_Masked_Cost_Volume_Autoencoding_for_Pretraining_Optical_Flow_Estimation_CVPR_2023_paper.html">FlowFormer++</a>, and <a href="https://drinkingcoder.github.io/publication/flowformer/">FlowFormer</a> occupy the TOP 3 places in the Sintel Optical Flow benchmark among published papers.</li>
               <li>One paper accepted to IROS 2023.</li>
               <li>Two papers accepted to CVPR 2023.</li>
               <li>Two papers accepted to ECCV 2023.</li>
@@ -60,58 +60,123 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
-
-
     <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bakedsdf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/bakedsdf_after.mp4" type="video/mp4">
+          <video  width=320 height=180 muted autoplay loop>
+          <source src="images/breakdance-flare_1_context-tap.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video></div>
-          <img src='images/bakedsdf_before.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function bakedsdf_start() {
-            document.getElementById('bakedsdf_image').style.opacity = "1";
-          }
+          </video>
 
-          function bakedsdf_stop() {
-            document.getElementById('bakedsdf_image').style.opacity = "0";
-          }
-          bakedsdf_stop()
-        </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://bakedsdf.github.io/">
-          <papertitle>BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis</papertitle>
-        </a>
+          <papertitle>Context-TAP: Tracking Any Point Demands Spatial Context Features</papertitle>
         <br>
-        <a href="https://lioryariv.github.io/">Lior Yariv*</a>,
-        <a href="https://phogzone.com/">Peter Hedman*</a>,
-        <a href="https://creiser.github.io/">Christian Reiser</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,  <br>
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-        <strong>Jonathan T. Barron</strong>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        Weikang Bian*,
+        Zhaoyang Huang*,
+        <strong>Xiaoyu Shi</strong>,
+        Yitong Dong, <br>
+        Yijin Li,
+        HongSheng Li <br>
+        <em>Arxiv</em>, 2023
         <br>
-        <em>SIGGRAPH</em>, 2023
-        <br>
-        <a href="https://bakedsdf.github.io/">project page</a>
+        <a href="https://wkbian.github.io/Projects/Context-TAP/">Project page</a>
         /
-        <a href="https://www.youtube.com/watch?v=fThKXZ6uDTk">video</a>
-        /
-        <a href="https://arxiv.org/abs/2302.14859">arXiv</a>
+        <a href="https://arxiv.org/abs/2306.02000">Paper</a>
         <p></p>
         <p>
-        We use SDFs to bake a NeRF-like model into a high quality mesh and do real-time view synthesis.
+          We set new SOTA on the task of Tracking Any Point (TAP) by introducing rich spatial context features.
         </p>
       </td>
     </tr>
 
+    <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
 
-    <tr onmouseout="merf_stop()" onmouseover="merf_start()">
+        <img src='images/unified_condition.png' width="320" height="180">
+
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <papertitle>A Unified Conditional Framework for Diffusion-based Image Restoration </papertitle>
+        <br>
+        Yi Zhang,
+        <strong>Xiaoyu Shi</strong>,
+        Dasong Li,
+        Xiaogang Wang,
+        Hongsheng Li <br>
+        <em>Arxiv</em>, 2023
+        <br>
+        <a href="https://zhangyi-3.github.io/project/UCDIR">Project page</a>
+        /
+        <a href="https://arxiv.org/abs/2305.20049">Paper</a>
+        /
+        <a href="https://github.com/zhangyi-3/UCDIR">Code</a>
+        <p></p>
+        <p>
+          A unified conditional framework based on diffusion models for image restoration.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <video  width=320 height=180 muted autoplay loop>
+          <source src="images/videoflow_demo_small.mov" type="video/mp4" >
+          Your browser does not support the video tag.
+          </video>
+
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <papertitle>VideoFlow: Exploiting Temporal Cues for Multi-frame Optical Flow Estimation</papertitle>
+        <br>
+        <strong>Xiaoyu Shi</strong>,
+        Zhaoyang Huang,
+        Weikang Bian,
+        Dasong Li, <br>
+        Manyuan Zhang,
+        Kachun Cheung,
+        Simon See,
+        Hongwei Qin, <br>
+        Jifeng Dai,
+        HongSheng Li <br>
+        <em>Arxiv</em>, 2023
+        <br>
+        <a href="https://arxiv.org/abs/2303.08340">Paper</a>
+        <p></p>
+        <p>
+          Ranks 1st on Sintel Optical Flow benchmark on Mar. 15th, 2023.
+        </p>
+      </td>
+    </tr>
+
+    <!-- <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+
+        <img src='images/unified_condition.png' width="160" height="100">
+
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <papertitle>Context-TAP: Tracking Any Point Demands Spatial Context Features</papertitle>
+        <br>
+        Weikang Bian*,
+        Zhaoyang Huang*,
+        <strong>Xiaoyu Shi</strong>,
+        Yitong Dong, <br>
+        Yijin Li,
+        HongSheng Li <br>
+        <em>Arxiv</em>, 2023
+        <br>
+        <a href="https://wkbian.github.io/Projects/Context-TAP/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2306.02000">Paper</a>
+        <p></p>
+        <p>
+          We set new SOTA on the task of Tracking Any Point (TAP) by introducing rich spatial context features.
+        </p>
+      </td>
+    </tr> -->
+
+
+    <!-- <tr onmouseout="merf_stop()" onmouseover="merf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='merf_image'><video  width=100% height=100% muted autoplay loop>
@@ -3455,12 +3520,12 @@ Under an Unknown Illumination</papertitle>
               <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
               <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
             </td>
-          </tr>
+          </tr> -->
 
         </tbody></table>
 
 				
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
               <heading>Misc</heading>
@@ -3523,7 +3588,7 @@ Under an Unknown Illumination</papertitle>
           </tr>
         </tbody></table>
       </td>
-    </tr>
+    </tr> -->
   </table>
 </body>
 
